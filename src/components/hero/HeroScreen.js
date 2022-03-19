@@ -10,7 +10,8 @@ export const HeroScreen = () => {
   const hero =  useMemo(() => getHeroById(heroeId), [heroeId]);
 
   const handleReturn = () => {
-    navigate(`/${hero.publisher.split(' ')[0].toLowerCase()}`);
+    //navigate(`/${hero.publisher.split(' ')[0].toLowerCase()}`);
+    navigate(-1);
   }
 
   if (!hero) {
